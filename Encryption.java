@@ -49,12 +49,7 @@ public class Encryption{
          n = fis.read();
                     
          while(n!=-1){
-             /*  
-                 This is the explanation I referred to for UTF - 8 encoding and 
-                 it shows how the bytes will be represented in this encoding
-                 
-                 https://www.youtube.com/watch?v=MijmeoH9LT4
-             */
+         
             i=0;
             b = Integer.toBinaryString(n);
             if(b.length()<8) number = Integer.parseInt(b, 2);
